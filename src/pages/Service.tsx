@@ -38,12 +38,12 @@ const Service = () => {
     {
       icon: Settings,
       title: 'Customized Solutions',
-      description: 'Tailored insurance solutions based on your company's demographics and requirements.'
+      description: 'Tailored insurance solutions based on your company\'s demographics and requirements.'
     },
     {
       icon: User,
       title: 'Employee Assistance',
-      description: 'Direct support for employees' insurance-related queries and claim submissions.'
+      description: 'Direct support for employees\' insurance-related queries and claim submissions.'
     },
   ];
 

@@ -34,7 +34,7 @@ const ClaimProcess = () => {
   const faqs = [
     {
       question: 'What documents are required for claim submission?',
-      answer: 'For claim submission, you generally need: filled claim form, original hospital bills, discharge summary, investigation reports, doctor's prescription, and any other relevant medical documents. For cashless claims, you also need to present your health card at the network hospital.'
+      answer: 'For claim submission, you generally need: filled claim form, original hospital bills, discharge summary, investigation reports, doctor\'s prescription, and any other relevant medical documents. For cashless claims, you also need to present your health card at the network hospital.'
     },
     {
       question: 'How long does the claim process take?',

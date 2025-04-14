@@ -18,7 +18,7 @@ const Insurers = () => {
     {
       name: 'ICICI Lombard',
       logo: 'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/icici-lombard.png',
-      description: 'One of India's leading private sector general insurance companies with superior customer service.'
+      description: 'One of India\'s leading private sector general insurance companies with superior customer service.'
     },
     {
       name: 'Bajaj Allianz',
@@ -43,7 +43,7 @@ const Insurers = () => {
     {
       name: 'New India Assurance',
       logo: 'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/new-india.png',
-      description: 'India's premier public sector insurance company with widespread presence and reliable service.'
+      description: 'India\'s premier public sector insurance company with widespread presence and reliable service.'
     },
     {
       name: 'Oriental Insurance',

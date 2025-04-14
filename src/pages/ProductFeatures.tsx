@@ -48,7 +48,7 @@ const ProductFeatures = () => {
     {
       icon: FileText,
       title: 'Customizable Plans',
-      description: 'Tailor insurance plans to suit your organization's needs and budget, choosing the right balance of coverage and cost.'
+      description: 'Tailor insurance plans to suit your organization\'s needs and budget, choosing the right balance of coverage and cost.'
     },
   ];
 
