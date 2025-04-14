@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// SecureNow colors
+				securenow: {
+					blue: '#004A8F', // Primary blue
+					orange: '#FF671F', // Primary orange
+					lightblue: '#5DA9E9', // Lighter blue for accents
+					gray: '#F5F5F5', // Light gray for backgrounds
+					darkgray: '#333333', // Dark gray for text
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
