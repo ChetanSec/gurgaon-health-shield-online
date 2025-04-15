@@ -10,11 +10,11 @@ const Hero = () => {
       {/* Background with overlay - optimized with preload */}
       <div className="absolute inset-0 bg-gradient-to-r from-securenow-blue to-transparent opacity-90 z-10" />
       
-      {/* Background Image - grayscale image with much smaller file size */}
+      {/* Background Image - optimized */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1527576539890-dfa815648363?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75')",
         }}
       />
       

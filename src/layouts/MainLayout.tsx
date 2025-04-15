@@ -16,7 +16,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <link 
         rel="preload" 
         as="image" 
-        href="https://images.unsplash.com/photo-1527576539890-dfa815648363?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
+        href="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75" 
       />
       <NavBar />
       <main className="flex-grow">
