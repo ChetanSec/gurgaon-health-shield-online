@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center mt-2">
               <MapPin size={16} className="mr-2" />
-              <span>Gurgaon, Haryana, India</span>
+              <span>No, 68 Plot, Sarhaul, Sector 18, Gurugram, Sarhol, Haryana 122001</span>
             </div>
           </div>
 
