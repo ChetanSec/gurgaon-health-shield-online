@@ -7,14 +7,14 @@ import { Shield, Users, Heart, ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <div className="relative min-h-[90vh] flex items-center">
-      {/* Background with overlay */}
+      {/* Background with overlay - optimized with preload */}
       <div className="absolute inset-0 bg-gradient-to-r from-securenow-blue to-transparent opacity-90 z-10" />
       
-      {/* Background Image */}
+      {/* Background Image - optimized */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75')",
         }}
       />
       
@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="bg-securenow-orange h-2 w-2 rounded-full animate-pulse" />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
             Group Health Insurance Solutions in Gurgaon
           </h1>
           
