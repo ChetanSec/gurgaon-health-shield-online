@@ -1,14 +1,22 @@
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://example.com/sitemap.xml
+
+# Common crawl optimizations
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
 Allow: /

@@ -1,8 +1,7 @@
-
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Briefcase, Users, Calendar, MapPin } from 'lucide-react';
+import { CheckCircle, Briefcase, Users, Calendar, MapPin, Phone as PhoneIcon } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Quotation = () => {
@@ -317,7 +316,7 @@ const Quotation = () => {
                   <h3 className="text-lg font-bold mb-4">Need Immediate Assistance?</h3>
                   <div className="space-y-3">
                     <p className="flex items-center gap-2">
-                      <Phone className="h-5 w-5 text-securenow-orange" />
+                      <PhoneIcon className="h-5 w-5 text-securenow-orange" />
                       +91 124 4900 300
                     </p>
                     <a href="mailto:contact@securenow.in" className="text-securenow-orange hover:underline">
