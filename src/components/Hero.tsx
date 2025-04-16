@@ -1,15 +1,20 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Heart, ArrowRight } from 'lucide-react';
+
 const Hero = () => {
   return <div className="relative min-h-[90vh] flex items-center">
       {/* Background with overlay - optimized with preload */}
       <div className="absolute inset-0 bg-gradient-to-r from-securenow-blue to-transparent opacity-90 z-10" />
       
-      {/* Background Image - optimized */}
+      {/* Background Image - replaced with logo */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75')"
+      backgroundImage: "url('/public/lovable-uploads/db65c0d1-d1b3-426c-ba1d-272d44761321.png')",
+      backgroundSize: 'contain', 
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'
     }} />
       
       {/* Content */}
@@ -65,4 +70,5 @@ const Hero = () => {
       </div>
     </div>;
 };
+
 export default Hero;
