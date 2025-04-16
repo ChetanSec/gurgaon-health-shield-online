@@ -2,15 +2,28 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Heart, ArrowRight } from 'lucide-react';
+
 const Hero = () => {
-  return <div className="relative min-h-[90vh] flex items-center">
-      {/* Background with overlay - optimized with preload */}
+  const insurers = [
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/star.png',
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/hdfc-ergo.png',
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/icici-lombard.png',
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/bajaj-allianz.png',
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/tata-aig.png',
+    'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/max-bupa.png'
+  ];
+
+  return (
+    <div className="relative min-h-[90vh] flex items-center">
+      {/* Background with overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-securenow-blue to-transparent opacity-90 z-10" />
       
-      {/* Background Image - optimized */}
+      {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75')"
-    }} />
+        backgroundImage: "url('https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/securenow-logo.png')",
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
+      }} />
       
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -61,8 +74,25 @@ const Hero = () => {
               <div className="text-sm text-white/80">Claims Support</div>
             </div>
           </div>
+
+          <div className="mt-16">
+            <h3 className="text-white text-xl mb-6 font-medium">Our Insurance Partners</h3>
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-6">
+              {insurers.map((logo, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-lg flex items-center justify-center">
+                  <img 
+                    src={logo} 
+                    alt="Insurance Partner" 
+                    className="h-12 w-auto object-contain filter brightness-0 invert"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Hero;
