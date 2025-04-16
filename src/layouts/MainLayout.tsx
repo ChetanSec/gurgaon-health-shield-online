@@ -12,11 +12,11 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <SEOSchema />
-      {/* Preload critical hero image */}
+      {/* Preload logo image */}
       <link 
         rel="preload" 
         as="image" 
-        href="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=75" 
+        href="/public/lovable-uploads/db65c0d1-d1b3-426c-ba1d-272d44761321.png" 
       />
       <NavBar />
       <main className="flex-grow">
