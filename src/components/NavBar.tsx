@@ -28,7 +28,7 @@ const NavBar = () => {
               <img 
                 src="/lovable-uploads/ec82eeef-3f54-4c6f-a24d-53cae748e10f.png" 
                 alt="SecureNow Logo" 
-                className="h-10 w-auto object-contain"
+                className="h-5 w-[140px] object-contain"
               />
             </Link>
           </div>
