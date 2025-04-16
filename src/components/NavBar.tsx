@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const NavBar = () => {
@@ -26,7 +25,11 @@ const NavBar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-securenow-blue">Secure<span className="text-securenow-orange">Now</span></span>
+              <img 
+                src="/lovable-uploads/ec82eeef-3f54-4c6f-a24d-53cae748e10f.png" 
+                alt="SecureNow Logo" 
+                className="h-10 w-auto object-contain"
+              />
             </Link>
           </div>
 
