@@ -73,6 +73,13 @@ const Insurers = () => {
       <section className="bg-securenow-blue text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Our Insurance Partners</h1>
+          <div className="flex justify-center items-center mb-8">
+            <img 
+              src="https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/star.png" 
+              alt="Star Health Insurance Logo" 
+              className="max-h-24 max-w-64 object-contain"
+            />
+          </div>
           <p className="text-xl max-w-3xl mx-auto">
             We collaborate with India's leading insurance providers to offer you the best coverage options for your business in Gurgaon.
           </p>
