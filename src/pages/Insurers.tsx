@@ -1,10 +1,11 @@
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import InsuranceCard from '@/components/InsuranceCard';
+
 const Insurers = () => {
   const insuranceProviders = [{
     name: 'Star Health Insurance',
-    logo: 'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/star.png',
+    logo: '/lovable-uploads/7183dd2c-9f28-4f9a-b5d2-139e375b7375.png',
     description: 'Specialized health insurance provider with excellent claim settlement ratio and extensive hospital network.'
   }, {
     name: 'HDFC Ergo',
@@ -51,6 +52,7 @@ const Insurers = () => {
     logo: 'https://s3-ap-southeast-1.amazonaws.com/securenow-app-section-icons-webapp/images/sbi.png',
     description: 'Reliable health insurance provider with simple and hassle-free claim settlement process.'
   }];
+
   return <MainLayout>
       {/* Header Section */}
       <section className="bg-securenow-blue text-white py-16">
@@ -127,4 +129,5 @@ const Insurers = () => {
       </section>
     </MainLayout>;
 };
+
 export default Insurers;
