@@ -10,6 +10,8 @@ import Insurers from "./pages/Insurers";
 import ClaimProcess from "./pages/ClaimProcess";
 import Quotation from "./pages/Quotation";
 import Technology from "./pages/Technology";
+import Dashboard from "./pages/technology/Dashboard";
+import EClaims from "./pages/technology/EClaims";
 import Service from "./pages/Service";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/claim-process" element={<ClaimProcess />} />
           <Route path="/quotation" element={<Quotation />} />
           <Route path="/technology" element={<Technology />} />
+          <Route path="/technology/dashboard" element={<Dashboard />} />
+          <Route path="/technology/e-claims" element={<EClaims />} />
           <Route path="/service" element={<Service />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

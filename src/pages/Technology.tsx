@@ -1,7 +1,8 @@
 
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
-import { Smartphone, Globe, Shield, Users, LockKeyhole, Activity, Gauge, Database } from 'lucide-react';
+import { Smartphone, Globe, Shield, Users, LockKeyhole, Activity, Gauge, Database, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Technology = () => {
   const techFeatures = [
@@ -45,6 +46,21 @@ const Technology = () => {
       title: 'Performance Metrics',
       description: 'Detailed reports and metrics to analyze policy performance and make data-driven decisions.'
     },
+  ];
+
+  const subpages = [
+    {
+      title: "HR Dashboard",
+      description: "Interactive analytics dashboard for HR teams to monitor policy performance, track claims, and generate reports.",
+      link: "/technology/dashboard",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      title: "E-Claims Solution",
+      description: "Paperless claims processing system with mobile submission and real-time tracking capabilities.",
+      link: "/technology/e-claims",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+    }
   ];
 
   return (
@@ -121,8 +137,45 @@ const Technology = () => {
         </div>
       </section>
 
-      {/* Tech Features Grid */}
+      {/* Featured Technology Solutions */}
       <section className="py-16 bg-securenow-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-securenow-blue mb-2">Technology Solutions</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore our specialized technology solutions designed for HR teams and employees.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {subpages.map((subpage, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={subpage.image} 
+                    alt={subpage.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 text-securenow-blue">{subpage.title}</h3>
+                  <p className="text-gray-600 mb-4">{subpage.description}</p>
+                  <Link 
+                    to={subpage.link}
+                    className="inline-flex items-center text-securenow-blue hover:text-securenow-orange font-medium"
+                  >
+                    Learn more
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Features Grid */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-securenow-blue mb-2">Technology Features</h2>
