@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+
 const Footer = () => {
   return <footer className="bg-securenow-blue text-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -79,8 +81,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          
+          {/* Insuropedia */}
+          <div className="flex flex-col items-center justify-center">
+            <a 
+              href="https://securenow.in/insuropedia/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <img 
+                src="/lovable-uploads/c4d1b6e5-09a0-4c70-9a4a-ac0a9aa1b07c.png" 
+                alt="Insuropedia" 
+                className="h-12"
+              />
+            </a>
+          </div>
+
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8">
